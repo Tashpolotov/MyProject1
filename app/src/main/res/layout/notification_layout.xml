@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="18dp"
+            android:layout_height="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrowleft_3"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мои Избранные"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/img_back"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="16dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_favorites"
+            app:layout_constraintStart_toStartOf="@id/img_back"
+            android:src="@drawable/ic_error"
+            android:layout_marginTop="34dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запись отменена!"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/img_cancel"
+            app:layout_constraintTop_toTopOf="@id/img_cancel"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_date_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сегодня | 15:36"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#1B6B93"
+            app:layout_constraintStart_toStartOf="@id/tv_cancel"
+            app:layout_constraintTop_toBottomOf="@id/tv_cancel"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_success_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img_cancel"
+            app:layout_constraintStart_toStartOf="@id/img_cancel"
+            android:text="Вы успешно отменили свою встречу с доктором Асановым Асаном"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_change"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrain_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_change"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_change"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запись изменена!"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/img_change"
+            app:layout_constraintTop_toTopOf="@id/img_change"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_date_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вчера | 15:36"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#1B6B93"
+            app:layout_constraintStart_toStartOf="@id/tv_change"
+            app:layout_constraintTop_toBottomOf="@id/tv_change"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_success_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img_change"
+            app:layout_constraintStart_toStartOf="@id/img_change"
+            android:text="Вы успешно изменили свою встречу с доктором Асановым Асаном"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_success"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrain_change"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_success"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_successfully"
+            android:layout_marginTop="30dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запись успешна!"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/img_success"
+            app:layout_constraintTop_toTopOf="@id/img_success"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_date_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сегодня | 13:00"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#1B6B93"
+            app:layout_constraintStart_toStartOf="@id/tv_success"
+            app:layout_constraintTop_toBottomOf="@id/tv_success"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_write_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img_success"
+            app:layout_constraintStart_toStartOf="@id/img_success"
+            android:text="Вы записались на встречу с доктор Асановым Асаном"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="home_fragment_color">#CEE1EC</color>
+    <color name="search_view_color">#828383</color>
+    <color name="indicator_color">#1B6B93</color>
+</resources>
